@@ -1,18 +1,29 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import CustomLayout from './containers/layout';
-import ArticleList from './containers/articleslistview';
+import ArticleList from './containers/articles';
 
 
 
-function App() {
-  return (
-    <div className="App">
-        <CustomLayout>
-            <ArticleList />
-        </CustomLayout>
-    </div>
-  );
-}
+class App extends React.Component {
+    render() {
+          return (
+            <div className="App">
+                <CustomLayout>
+                    <ArticleList />
+                </CustomLayout>
+            </div>
+          );
+        }
+
+    }
+//  return (
+//    <div className="App">
+//        <CustomLayout>
+////            <ArticleList />
+//        </CustomLayout>
+//    </div>
+//  );
+//}
 
 export default App;
