@@ -1,8 +1,8 @@
-
 import React from "react";
 import { List, Avatar, Space } from 'antd';
 import { MessageOutlined, LikeOutlined, StarOutlined } from '@ant-design/icons';
 
+import { Link } from 'react-router-dom'
 
 
 const IconText = ({ icon, text }) => (
@@ -47,7 +47,7 @@ const Articles = (props) => {
               >
                 <List.Item.Meta
                   avatar={<Avatar src={item.avatar} />}
-                  title={<a href={item.href}>{item.title}</a>}
+                  title={<a href={`/${item.id}`}>{item.title}</a>}
                   description={item.description}
                 />
                 {item.content}
@@ -57,5 +57,6 @@ const Articles = (props) => {
 
     )
 }
+
 export default Articles;
 
