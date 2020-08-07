@@ -1,0 +1,18 @@
+import React from 'react';
+import 'antd/dist/antd.css';
+import CustomLayout from './containers/layout';
+import ArticleList from './containers/articleslistview';
+
+
+
+function App() {
+  return (
+    <div className="App">
+        <CustomLayout>
+            <ArticleList />
+        </CustomLayout>
+    </div>
+  );
+}
+
+export default App;
